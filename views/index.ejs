@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <script src='/javascripts/main.js'></script>
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<table class="board">
+    <% for(var i = 0; i < NB_MAX_LINES; i++) { %>
+    <tr>
+        <% for(var j = 0; j < NB_MAX_ROWS; j++) { %>
+        <td class="<%= board[i][j] %>" data-i="<%= i %>" data-j="<%= j %>"><div>&nbsp;</div></td>
+        <% } %>
+    </tr>
+    <% } %>
+</table>
+
+</body>
+</html>

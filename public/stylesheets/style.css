@@ -1,0 +1,23 @@
+body {
+  background-color: antiquewhite;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+table.board td {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #00B7FF;
+  width: 60px;
+  height: 60px; }
+  table.board td.white {
+    background-color: white; }
+  table.board td.black {
+    background-color: black; }
+
+/*# sourceMappingURL=style.css.map */

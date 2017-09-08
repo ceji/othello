@@ -1,0 +1,33 @@
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+
+body
+  background-color: antiquewhite
+  padding: 50px
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+
+a
+  color: #00B7FF
+
+
+$piece_size: 60px
+
+table.board
+  td
+    +border-radius(15px)
+    border: 1px solid
+    border-color: #00B7FF
+    width: $piece_size
+    height: $piece_size
+
+    &.white
+      background-color: white
+
+    &.black
+      background-color: black
+
+
