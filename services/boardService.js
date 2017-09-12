@@ -1,6 +1,6 @@
 // Service managing the board
 
-var BoardService = 	class {
+class BoardService {
 
 	constructor(height, width) {
 	}	
