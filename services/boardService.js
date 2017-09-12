@@ -11,7 +11,8 @@ class BoardService {
   			for (var i = 0; i < 8; i++) {
   				board[i] = Array.apply(null, {length: 8}).fill(0);
   			}
-  			return board;
+
+			return board;
 	}
 
 	// A click has been done on the board. We update the board and return the value
